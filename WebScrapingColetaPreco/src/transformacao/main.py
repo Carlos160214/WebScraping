@@ -12,7 +12,7 @@ username = 'ADMIN'
 password = '123456789Deus@'
 
 # Ler o arquivo CSV
-df = pd.read_json(r"/opt/airflow/dags/script/WebScrapingColetaPreco/data/data1.jsonl", lines=True, dtype='string')
+df = pd.read_json(r"/opt/airflow/dags/WebScraping/WebScrapingColetaPreco/data/data1.jsonl", lines=True, dtype='string')
 
 # Configurações do pandas
 pd.options.display.max_columns = None
