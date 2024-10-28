@@ -60,8 +60,8 @@ with DAG(
     run_scrapy = BashOperator(
         task_id='extracao',
         bash_command=(
-            'cd /opt/airflow/dags/script/WebScrapingColetaPreco/src && '
-            'scrapy crawl mercado_livre -o ../data/data1.jsonl'
+            '/home/opc/airflow/dags/WebScraping/WebScrapingColetaPreco/src && '
+            'scrapy crawl mercado_livre -o ../../data/data1.jsonl'
         ),
         dag=dag
     )
